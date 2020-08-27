@@ -1,12 +1,13 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "parcel frontend/index.html & nodemon --experimental-modules backend/index.js",
+    "dev": "parcel watch frontend/index.html & nodemon --experimental-modules backend/index.js",
     "client": "parcel frontend/index.html",
     "server": "nodemon --experimental-modules backend/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"
@@ -14,5 +15,8 @@
   "devDependencies": {
     "nodemon": "^2.0.4",
     "parcel": "^1.12.4"
-  }
+  },
+  "browserslist": [
+    ">= 2%"
+  ]
 }
